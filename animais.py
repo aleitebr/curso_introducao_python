@@ -122,7 +122,7 @@ class Cachorro(Mamifero):
 
 class Homem(Mamifero):
     # propriedades comuns a todos os homens
-    GENEROS = ['M', 'F'] # macho ou femea
+    GENEROS = ['M', 'F'] # neste caso específico, gênero não se confunde com orientação sexual, esse exemplo é para propósitos científicos
     NOME_CIENTIFICO = 'Homo Sapiens'
     genero = None
     
