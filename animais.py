@@ -4,7 +4,7 @@ Created on Thu Aug  8 13:12:58 2024
 
 @author: aleitebr
 
-Última Atualização: 8 de Agosto de 2024, Quinta-Feira, 17:17h
+Última Atualização: 9 de Agosto de 2024, Quinta-Feira, 07:55h
 """
 class Animal:
     # propriedades comuns a todos os animais, segundo o Microsoft Copilot
@@ -122,31 +122,8 @@ class Cachorro(Mamifero):
 
 class Homem(Mamifero):
     # propriedades comuns a todos os homens
-    GENEROS = ['H', 'M', 'Hcis', 'Mcis', 'L', 'G', 'B', 'T', 'Q', 'I', 'C', 'A', 'P', 'F', '2', 'K', '+']
-    """
-        H: Homem
-        M: Mulher
-        Hcis: Homem Cisgênero
-        Mcis: Mulher Cisgênero
-
-    Microsoft Copilot:
-
-        L: Lésbicas
-        G: Gays
-        B: Bissexuais
-        T: Transgêneros
-        Q: Queer
-        Q: Questionando
-        I: Intersexuais
-        C: Curiosos
-        A: Assexuais
-        P: Pansexuais e Polissexuais
-        F: Familiares e Amigos (Aliados)
-        2: Two-Spirit (Duas-Espíritos, uma identidade de gênero indígena norte-americana)
-        K: Kink (pessoas que praticam ou se identificam com práticas sexuais não convencionais)
-        O sinal de + no final da sigla indica que há outras identidades e orientações que também fazem parte do movimento    
-
-    """
+    GENEROS = ['M', 'F'] # macho ou femea
+    NOME_CIENTIFICO = 'Homo Sapiens'
     genero = None
     
     def __init__(self, genero):
@@ -154,6 +131,12 @@ class Homem(Mamifero):
             self.genero = genero
         else:
             raise ValueError('Gênero desconhecido!')
+        
+    def generoo(self):
+        return self.genero
+    
+    def nome_cientifico(self):
+        return self.NOME_CIENTIFICO
         
 class Sapo(Anfibio):
     # propriedades comuns a todos os sapos, segundo o Microsoft Copilot    
